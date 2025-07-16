@@ -1,0 +1,29 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content %}
+<div class="jul">
+    <div class="img_back">
+        <img src="{% static 'img/new.png' %}" width="200px" height="200px"/>
+    </div>
+    <br><br>
+    <div class="title_back">
+        ENTER AS
+    </div>
+    <br><br>
+    <div class="backk-1 new">
+        <button class="button_1">
+            <a href="http://127.0.0.1:8000/admin" class="a_adjust"><img src="{% static 'img/admin.jpg' %}" width="100%" height="100%"></a>
+        </button>
+        <button class="button_1">
+            <a href="{% url 'signin'%}" class="a_adjust"><img src="{% static 'img/customer.jpg' %}" width="100%" height="100%"></a>
+        </button>   
+    </div>
+    <br><br>
+
+    <br><br><br><br><br><br>
+</div>
+
+
+{% endblock %}
+

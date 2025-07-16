@@ -1,0 +1,22 @@
+footer p {
+    border-top: #0f0f0f;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: right;
+    padding-top: 1rem;
+    font-size: 1.25rem;; 
+}
+
+.title_back{
+    color: rgba(173, 4, 4, 0.961);
+}
+
+.img_back{
+    margin-top: -60px;
+    margin-bottom: -60px;
+}
+
+

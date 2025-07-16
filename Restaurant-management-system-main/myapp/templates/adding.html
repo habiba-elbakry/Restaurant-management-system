@@ -1,0 +1,21 @@
+{% extends 'base__.html' %}
+{% load static %}
+
+{% block content %}
+<br><br>
+<div class="next">
+    <button class="place ly" onclick="view_order()"><a href="{% url 'vieworder' %}">VIEW ORDER</a></button>
+    <div class="rel">
+        <div class="icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="item_no" id="item_no">
+            23
+        </div>
+    </div>
+    <button class="place lh" onclick="place_order()"><a href="{% url 'book' %}">PLACE ORDER</a></button>
+    <button class="place rh" onclick="reset_order()"><a href="{% url 'book' %}">CANCEL ORDER</a></button>
+</div>
+<div class="items-flex" id="items-flexx">
+</div>
+{% endblock %}

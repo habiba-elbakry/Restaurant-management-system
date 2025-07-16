@@ -1,0 +1,65 @@
+{% extends 'base_.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+  <article>
+    <h1>Make a reservation</h1>
+    <!--Begin row-->
+    <div class="row">
+      <!--Begin col-->
+      <div class="column">
+        <h3 style="font-size: 29px;">To cancel your booking-> <a href="{% url 'cancel' %}">Cancel Booking</a></h3>
+        <form action="" method="post">
+          {% csrf_token %}
+          {{form.as_p}}
+          <div class="flexy">
+            <div class="button0" onclick="add_order()">
+              <a href="{% url 'adding' %}">Add order</a>
+            </div>
+            <div class="button0" onclick="res()">
+              <a href="{% url 'book' %}">Cancel order</a>
+            </div>
+          </div>
+          <input type="submit" onclick="res()" style="background-color: rgba(173, 4, 4, 0.961);" id="button" class="but_">
+        </form>
+      </div>
+      <!--End col-->
+
+      <div class="column">
+        <div class="checkout">
+          <h3 style="text-align: center;">CHECKOUT</h3>
+          <div class="p-1">
+            <div class="m-1">
+              <h4>Your Bill (Before Services):</h4>
+            </div>
+            <div id="bill_b">
+              $ 0.00
+            </div>
+          </div>
+          <hr class="line">
+          <div class="p-2">
+            <div class="m-2">
+              <h4>Servies (14%):</h4>
+            </div>
+            <div id='services'>
+              $ 0.00
+            </div>
+          </div>
+          <hr class="line">
+          <br>
+          <div class="p-3">
+            <div class="m-3">
+              <h4>Your Bill (After Services):</h4>
+            </div>
+            <div id="bill_a">
+              $ 0.00
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+{% endblock %}

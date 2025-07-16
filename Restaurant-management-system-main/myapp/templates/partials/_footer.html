@@ -1,0 +1,17 @@
+{% load static %}
+<header style="margin-top: -70px; margin-bottom: -80px;">
+    <img src="{% static 'img/new.png' %}" width="230px" height="380px" />
+</header>
+<br>
+  <nav >
+      <ul class="g">
+        <li class="ss"><a href="{% url 'index' %}">HOME</a></li>
+        <li><a href="{% url 'about' %}">ABOUT</a></li>
+        <li><a href="{% url 'menu' %}">MENU</a></li>
+        <li><a href="{% url 'book' %}">BOOK</a></li>      
+        <li><a href="{% url 'rating' %}">RATING</a></li>
+        <li><a href="{% url 'report' %}">REPORT</a></li>
+        <li class="ll"><a href="{% url 'signin' %}">Sign Out</a></li>
+      </ul>
+    </div>
+  </nav>

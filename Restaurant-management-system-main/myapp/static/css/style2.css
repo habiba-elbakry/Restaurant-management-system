@@ -1,0 +1,37 @@
+.f{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    
+}
+
+.f .column {
+    font-size: 22px;
+}
+
+.m-l{
+    margin-left: 60px;
+}
+
+.flexx{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.ss{
+    margin-left: 400px;
+}
+.ll{
+    margin-left: 300px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+

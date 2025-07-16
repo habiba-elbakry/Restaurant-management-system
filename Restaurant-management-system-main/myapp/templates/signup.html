@@ -1,0 +1,45 @@
+{% extends 'base2.html' %}
+{% load static %}
+
+{% block content %}
+<div class="jul">
+    <div class="img_back">
+        <img src="{% static 'img/new.png' %}" width="200px" height="200px"/>
+    </div>
+    <div class="backk">
+        <h2 class="center-1">
+            SIGN UP 
+        </h2>
+        <div class="backk-1">
+                <div style="color: red; text-align: center;">
+                    {{error}}
+                </div>
+            <form action="" method="post">
+                {% csrf_token %}
+                <label for="username-1" class="labell">Username</label>
+                <input type="text" placeholder="Enter your username" class='inpt' required id="username-1" name="username-1">
+
+                <label for="email-1" class="labell">Email</label>
+                <input type="email" placeholder="Enter your email"  class='inpt' required id="email-1" name="email-1">
+
+                <label for="password-1" class="labell">Password</label>
+                <input type="password" placeholder="Enter your password" class='inpt' required id="password-1"  name='password-1'>
+
+                <label for="password-11" class="labell">Confirm password</label>
+                <input type="password" placeholder="Enter your password again" class='inpt' required id="password-11" name="password-11">
+
+                <div class="end-1">
+                    <a href="{% url 'signin'%}" class="a_adj">Already have an account?</a>
+                </div>
+
+                <button type='submit' class="sub">SIGN UP</button>
+            </form>
+
+            <br>
+        </div>
+    </div>
+</div>
+    <br><br><br><br><br><br>
+
+
+{% endblock %}

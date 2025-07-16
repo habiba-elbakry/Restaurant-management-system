@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+  <article>
+    <h1>Make a Rating</h1>
+    <!--Begin row-->
+    <div? class="row">
+      <!--Begin col-->
+      <div class="column">
+        <form action="" method="post">
+          {% csrf_token %}
+          {{form.as_p}}
+          <input type="submit" class='g1' style="background-color: rgba(173, 4, 4, 0.961);" id="button" >
+        </form>
+      </div>
+      <!--End col-->
+    </div>
+  </article>
+</section>
+{% endblock %}
